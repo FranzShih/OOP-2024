@@ -17,10 +17,13 @@ public class Main
 
 	public void doCatStuff()
 	{
-		// Put your code here
-		System.out.println("cats are from space");
+		Cat ginger = new Cat("Ginger");
+		for(int i = 0; i < 9; i++)
+		{
+			ginger.kill();
+		}
 	}
-	
+
 	public static void main(String[] args)
 	{
 		System.out.println("Hello world");
@@ -28,7 +31,6 @@ public class Main
 		Main m = new Main();
 
 		m.doDogStuff();
-
 		m.doCatStuff();
 	}
 	
