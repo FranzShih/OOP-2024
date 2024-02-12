@@ -1,39 +1,14 @@
 package ie.tudublin;
 
-public class Cat
-{
-    private int numLives = 9;
-    String name;
-
-    public void setName(String name)
-	{
-		this.name = name;
-	}
-
-    public Cat()
+public class Cat extends Animal {
+    public void speak()
     {
-        this.name = "Random Cat";
-        this.numLives = 9;
+        System.out.println("Meaow: " + getName());
     }
 
     public Cat(String name)
-	{
-		this.name = name;
-        this.numLives = 9;
-	}
-
-    public void kill()
-    {   
-        this.numLives = this.numLives -1;
-
-        if(this.numLives > 0)
-        {
-            System.out.println("Ouch!");
-        }
-        else
-        {
-            System.out.println("Dead");
-        }
-       
+    {
+        setName(name);
     }
-}   
+    
+}
