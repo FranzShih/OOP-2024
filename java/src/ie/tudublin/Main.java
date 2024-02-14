@@ -8,7 +8,7 @@ public class Main
 	public void helloProcessing()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new MultiSensoryFoLoopExperience());
+        processing.core.PApplet.runSketch( a, new Arrays());
     }
 
 	public void doDogStuff()
@@ -22,15 +22,6 @@ public class Main
 		lucy.speak();
 	}
 
-	public void doCatStuff()
-	{
-		Cat ginger = new Cat("Ginger");
-		for(int i = 0; i < 9; i++)
-		{
-			ginger.kill();
-		}
-	}
-
 	public static void main(String[] args)
 	{
 		System.out.println("Hello world");
@@ -39,7 +30,7 @@ public class Main
 		Main m = new Main();
 
 		m.doDogStuff();
-		m.doCatStuff();
+		//m.doCatStuff();
 
 		Dog nuala = new Dog("Nuala");
 		nuala.speak();
